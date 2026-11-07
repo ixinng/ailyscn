@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>待售域名资产组合</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">域名资产</a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#domains" onclick="closeNav()">域名清单</a></li>
+        <li><a href="#process" onclick="closeNav()">购买流程</a></li>
+        <li><a href="#contact" onclick="closeNav()">立即询价</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">一组可直接投入使用的短域名</div>
+      <h1 class="hero-title">这批域名<br/>值得一起看</h1>
+      <p class="hero-desc">五个域名，同源组合，覆盖开发者工具、电商开店、生活方式品牌等多个场景。<br/>可单买其中一个，也可打包谈价格。</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">5</span><span class="stat-label">个待售域名</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">种后缀组合</span></div>
+        <div class="stat"><span class="stat-num">5</span><span class="stat-label">个字母至10字母</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#domains" class="btn btn-primary">查看域名详情</a>
+        <a href="#contact" class="btn btn-outline">发送询价</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="domain-grid">
+        <div class="dg-item">1024<span>.link</span></div>
+        <div class="dg-item">1024<span>.store</span></div>
+        <div class="dg-item"><span class="dg-brand">suisuinian</span><span>.top</span></div>
+        <div class="dg-item">old<span>boy.top</span></div>
+        <div class="dg-item ailys">ailys<span>.cn</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Collection -->
+  <section class="why-section">
+    <div class="container">
+      <h2>为什么这批域名值得一起看</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🔗</div>
+          <h3>同源组合</h3>
+          <p>共用同一个数字记忆，也可一次谈多个，也能与独立的纯字母域名互补。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🏷️</div>
+          <h3>命名逻辑清晰</h3>
+          <p>谐音记忆与情感词组三种命名逻辑，名字本身就带话题性，听一遍就能记住。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌐</div>
+          <h3>后缀语义直连</h3>
+          <p>每一个都能直接说清它是做什么的。.cn 本土访问友好，.top 榜单与专题内容适配。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>传播成本低</h3>
+          <p>短到可以放进任何一张物料，口播与社交分享都不费力，印刷与社交账号同名即可。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Domain Cards -->
+  <section class="domains-section" id="domains">
+    <div class="container">
+      <h2>五个待售域名</h2>
+      <p class="section-desc">每个都配了品牌名与适用场景，放在一起是一组可组合的资产。</p>
+
+      <div class="domains-grid">
+        <!-- Domain 1: 1024.link -->
+        <div class="domain-card" data-domain="1024.link">
+          <div class="card-header">
+            <span class="card-tag">技术符号</span>
+            <span class="card-status">待售</span>
+          </div>
+          <div class="card-domain">1024<span>.link</span></div>
+          <div class="card-brand">千链 · QianChain</div>
+          <div class="card-tagline">把开发者都记得的数字，放在链接的后缀上</div>
+          <div class="card-metrics">
+            <div class="metric"><span class="metric-val">1024</span><span class="metric-unit">技术符号</span></div>
+            <div class="metric"><span class="metric-val">.link</span><span class="metric-unit">直指链接与连接关系</span></div>
+            <div class="metric"><span class="metric-val">regular</span><span class="metric-unit">字符长度</span></div>
+          </div>
+          <p class="card-positioning">1024 是程序员共同记住的日期，.link 直指链接与连接关系，适合开发者工具、短链服务与社区入口。</p>
+          <div class="card-scenarios">
+            <span class="scenario-tag">开发者工具</span>
+            <span class="scenario-tag">短链服务</span>
+            <span class="scenario-tag">社区入口</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-price">参考报价：可议</span>
+            <button class="btn-inquire" onclick="openInquiry('1024.link')">以此域名询价</button>
+          </div>
+        </div>
+
+        <!-- Domain 2: 1024.store -->
+        <div class="domain-card" data-domain="1024.store">
+          <div class="card-header">
+            <span class="card-tag">交易语义</span>
+            <span class="card-status">待售</span>
+          </div>
+          <div class="card-domain">1024<span>.store</span></div>
+          <div class="card-brand">千店 · QianStore</div>
+          <div class="card-tagline">同一个数字，换到店铺的后缀上</div>
+          <div class="card-metrics">
+            <div class="metric"><span class="metric-val">1024</span><span class="metric-unit">技术符号</span></div>
+            <div class="metric"><span class="metric-val">.store</span><span class="metric-unit">交易语义</span></div>
+            <div class="metric"><span class="metric-val">regular</span><span class="metric-unit">字符长度</span></div>
+          </div>
+          <p class="card-positioning">1024 的开发者符号叠加 .store 的交易语义，适合开店工具、独立站与商品集合站，也能与 1024.link 组成同一套品牌记忆。</p>
+          <div class="card-scenarios">
+            <span class="scenario-tag">开店工具</span>
+            <span class="scenario-tag">独立站</span>
+            <span class="scenario-tag">商品集合站</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-price">参考报价：可议</span>
+            <button class="btn-inquire" onclick="openInquiry('1024.store')">以此域名询价</button>
+          </div>
+        </div>
+
+        <!-- Domain 3: suisuinian.top -->
+        <div class="domain-card long-domain" data-domain="suisuinian.top">
+          <div class="card-header">
+            <span class="card-tag">谐音记忆</span>
+            <span class="card-status">待售</span>
+          </div>
+          <div class="card-domain">suisuinian<span>.top</span></div>
+          <div class="card-brand">岁岁念 · SuiSuiNian</div>
+          <div class="card-tagline">把「碎碎念」写成「岁岁念」</div>
+          <div class="card-metrics">
+            <div class="metric"><span class="metric-val">10</span><span class="metric-unit">字母主体</span></div>
+            <div class="metric"><span class="metric-val">谐音</span><span class="metric-unit">记忆方式</span></div>
+            <div class="metric"><span class="metric-val">long</span><span class="metric-unit">字符长度</span></div>
+          </div>
+          <p class="card-positioning">谐音好记，同时带着记录与长久的意思，适合个人内容、纪念日产品与生活方式品牌，名字本身就有温度。</p>
+          <div class="card-scenarios">
+            <span class="scenario-tag">个人内容</span>
+            <span class="scenario-tag">纪念日产品</span>
+            <span class="scenario-tag">生活方式品牌</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-price">参考报价：可议</span>
+            <button class="btn-inquire" onclick="openInquiry('suisuinian.top')">以此域名询价</button>
+          </div>
+        </div>
+
+        <!-- Domain 4: oldboy.top -->
+        <div class="domain-card" data-domain="oldboy.top">
+          <div class="card-header">
+            <span class="card-tag">直白词组</span>
+            <span class="card-status">待售</span>
+          </div>
+          <div class="card-domain">oldboy<span>.top</span></div>
+          <div class="card-brand">老男孩 · OldBoy</div>
+          <div class="card-tagline">一个不需要翻译的名字</div>
+          <div class="card-metrics">
+            <div class="metric"><span class="metric-val">6</span><span class="metric-unit">字母主体</span></div>
+            <div class="metric"><span class="metric-val">常见词</span><span class="metric-unit">拼写构成</span></div>
+            <div class="metric"><span class="metric-val">regular</span><span class="metric-unit">字符长度</span></div>
+          </div>
+          <p class="card-positioning">直白的英文词组，指代经历过一段路仍愿意出发的人，适合男性成长社群、户外运动与复古生活方式品牌。</p>
+          <div class="card-scenarios">
+            <span class="scenario-tag">男性成长社群</span>
+            <span class="scenario-tag">户外运动</span>
+            <span class="scenario-tag">复古生活方式</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-price">参考报价：可议</span>
+            <button class="btn-inquire" onclick="openInquiry('oldboy.top')">以此域名询价</button>
+          </div>
+        </div>
+
+        <!-- Domain 5: ailys.cn -->
+        <div class="domain-card" data-domain="ailys.cn">
+          <div class="card-header">
+            <span class="card-tag">短字母</span>
+            <span class="card-status">待售</span>
+          </div>
+          <div class="card-domain">ailys<span>.cn</span></div>
+          <div class="card-brand">艾莉诗 · Ailys</div>
+          <div class="card-tagline">五个字母，直接长成一个品牌名</div>
+          <div class="card-metrics">
+            <div class="metric"><span class="metric-val">5</span><span class="metric-unit">字母主体</span></div>
+            <div class="metric"><span class="metric-val">.cn</span><span class="metric-unit">本土后缀</span></div>
+            <div class="metric"><span class="metric-val">regular</span><span class="metric-unit">字符长度</span></div>
+          </div>
+          <p class="card-positioning">读音自然接近「艾莉诗」，.cn 后缀适合面向国内用户的品牌站、内容号与本地服务，短字母便于口头传播。</p>
+          <div class="card-scenarios">
+            <span class="scenario-tag">品牌站</span>
+            <span class="scenario-tag">内容号</span>
+            <span class="scenario-tag">本地服务</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-price">参考报价：可议</span>
+            <button class="btn-inquire" onclick="openInquiry('ailys.cn')">以此域名询价</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Combined Value -->
+  <section class="combined-section">
+    <div class="container">
+      <h2>组合价值</h2>
+      <div class="combined-grid">
+        <div class="combined-card">
+          <div class="cc-domain-pair">
+            <span class="dp">1024.link</span>
+            <span class="dp-arrow">+</span>
+            <span class="dp">1024.store</span>
+          </div>
+          <p>入口与成交可成对使用。链接服务 + 店铺工具的完整链路，共用同一记忆点。</p>
+        </div>
+        <div class="combined-card">
+          <div class="cc-domain-pair">
+            <span class="dp">ailys.cn</span>
+            <span class="dp-arrow">×</span>
+            <span class="dp">品牌全栈</span>
+          </div>
+          <p>五个字母直接长成一个品牌名。.cn 后缀天然指向国内用户，适合品牌自营与多品类集合店。</p>
+        </div>
+        <div class="combined-card">
+          <div class="cc-domain-pair">
+            <span class="dp">suisuinian.top</span>
+            <span class="dp-arrow">→</span>
+            <span class="dp">内容矩阵</span>
+          </div>
+          <p>谐音自带传播属性，适合做个人博客专栏、专题与内容合辑，长期更新不违和。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transaction Process -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <h2>四步完成购买</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>填写询价表单</h3>
+          <p>选择要查看的域名，填写称呼、联系邮箱与意向出价。或直接发邮件至 <strong>obbro@foxmail.com</strong></p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>小时内回复询价</h3>
+          <p>我们会在收到邮件后尽快回复，说明目标域名与预算区间，再决定要不要谈价格。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>第三方担保付款</h3>
+          <p>双方在第三方担保平台完成下单与放款，资金由平台托管，确认价格后再进入过户环节。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>完成过户</h3>
+          <p>提供转移码并配合完成域名转移与账号交付。注册信息将更新为买方持有，过户全程可查。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transaction Details -->
+  <section class="details-section">
+    <div class="container">
+      <h2>交易保障</h2>
+      <div class="details-grid">
+        <div class="detail-item">
+          <strong>全部支持第三方担保与标准过户</strong>
+          <p>支持第三方担保过户，支持议价与打包沟通。</p>
+        </div>
+        <div class="detail-item">
+          <strong>交易统一</strong>
+          <p>全部沟通通过邮箱进行，信息仅用于本次域名交易沟通。</p>
+        </div>
+        <div class="detail-item">
+          <strong>付款方式与预计过户时间</strong>
+          <p>最终价格与交易方式以双方协商结果为准。以上估值与组合说明仅代表卖方报价参考。</p>
+        </div>
+        <div class="detail-item">
+          <strong>交付内容</strong>
+          <p>域名所有权与转移授权。域名详细信息与估值以实际沟通为准。</p>
+        </div>
+      </div>
+      <p class="disclaimer">本页内容不构成投资建议。域名信息与估值以实际沟通为准。</p>
+    </div>
+  </section>
+
+  <!-- Contact / Inquiry -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>立即询价</h2>
+      <p class="contact-desc">对哪个域名感兴趣？填写下方表单，或直接把以下内容复制到邮件发送给 <strong>obbro@foxmail.com</strong></p>
+
+      <div class="inquiry-form" id="inquiryForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>称呼 <span class="required">*</span></label>
+            <input type="text" id="fname" placeholder="您的称呼" required>
+          </div>
+          <div class="form-group">
+            <label>联系邮箱 <span class="required">*</span></label>
+            <input type="email" id="femail" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>联系电话</label>
+            <input type="tel" id="fphone" placeholder="选填">
+          </div>
+          <div class="form-group">
+            <label>意向域名</label>
+            <select id="fdomain">
+              <option value="">全部</option>
+              <option value="1024.link">1024.link（千链）</option>
+              <option value="1024.store">1024.store（千店）</option>
+              <option value="suisuinian.top">suisuinian.top（岁岁念）</option>
+              <option value="oldboy.top">oldboy.top（老男孩）</option>
+              <option value="ailys.cn">ailys.cn（艾莉诗）</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>意向出价 / 预算区间</label>
+          <input type="text" id="fbudget" placeholder="例如：¥5,000 - ¥10,000">
+        </div>
+        <div class="form-group full">
+          <label>留言</label>
+          <textarea id="fmessage" rows="4" placeholder="留言请控制在200字以内，说明目标域名与预算区间..."></textarea>
+        </div>
+        <button class="btn btn-primary btn-submit" onclick="submitInquiry()">提交询价</button>
+      </div>
+
+      <div class="email-template">
+        <p class="et-label">或直接复制以下模板发送邮件：</p>
+        <pre class="et-code" id="emailTemplate">主题：域名询价 - [您的称呼]
+
+您好！我对以下域名感兴趣：
+[选择域名：1024.link / 1024.store / suisuinian.top / oldboy.top / ailys.cn]
+
+我的称呼：
+联系邮箱：
+联系电话（选填）：
+意向出价/预算区间：
+其他说明：
+
+期待回复，谢谢！</pre>
+        <button class="btn btn-outline-small" onclick="copyEmailTemplate()">复制邮箱模板</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">域名资产</div>
+          <p class="footer-desc">一组可直接投入使用的短域名资产组合</p>
+        </div>
+        <div>
+          <h4>域名清单</h4>
+          <ul>
+            <li><a href="#" onclick="openInquiry('1024.link')">1024.link — 千链</a></li>
+            <li><a href="#" onclick="openInquiry('1024.store')">1024.store — 千店</a></li>
+            <li><a href="#" onclick="openInquiry('suisuinian.top')">suisuinian.top — 岁岁念</a></li>
+            <li><a href="#" onclick="openInquiry('oldboy.top')">oldboy.top — 老男孩</a></li>
+            <li><a href="#" onclick="openInquiry('ailys.cn')">ailys.cn — 艾莉诗</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系方式</h4>
+          <ul>
+            <li>邮箱：<a href="mailto:obbro@foxmail.com">obbro@foxmail.com</a></li>
+            <li>所有沟通通过邮件进行</li>
+            <li>工作时间内尽快回复</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>本页内容不构成投资建议 &nbsp;·&nbsp; 域名资产出售 &nbsp;·&nbsp; 信息以域名注册商当前记录为准</p>
+        <p class="copyright">保留所有权利</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Domain Detail Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="domainModal">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
